@@ -114,7 +114,7 @@
 /* estilizando conteiner sobre */
 .conteiner-one {
     display: none;
-    height: 80vh;
+    height: 75vh;
 }
 
 .about-text {
@@ -136,14 +136,43 @@
 }
 
 /* estilizando conteiner projeots */
-.conteiner-two {
-    background: red;
-    display: none;
+.conteiner-two {    
+    display: block;
+}
+
+.project {
+    margin-top: 15px;
+    height: 480px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.video {
+    align-items: center;
+    margin-top: 15px;
+}
+
+.description {
+    text-align: center;
+}
+
+.description a {
+    text-decoration: none;
+    color: #0d1dff;
+}
+
+.project-one {
+    background: #d6d6d6;
+}
+
+.project-two {
+    background: #fff;
 }
 
 /* estilizando conteiner certificados */
 .conteiner-three {
-    display: block;
+    display: none;
 }
 
 .certificate {
