@@ -113,7 +113,7 @@
 
 /* estilizando conteiner sobre */
 .conteiner-one {
-    display: none;
+    display: block;
     height: 75vh;
 }
 
@@ -137,7 +137,7 @@
 
 /* estilizando conteiner projeots */
 .conteiner-two {    
-    display: block;
+    display: none;
 }
 
 .project {
