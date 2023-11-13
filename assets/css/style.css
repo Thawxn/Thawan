@@ -114,13 +114,13 @@
 /* estilizando conteiner sobre */
 .conteiner-one {
     display: block;
-    height: 55vh;
 }
 
 .about-text {
     max-width: 80vw;
     margin: auto;
     margin-top: 10px;
+    margin-bottom: 35px;
 }
 
 .contact {
