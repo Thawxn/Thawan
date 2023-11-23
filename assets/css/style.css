@@ -50,6 +50,7 @@
     display: flex
 }
 .box-img {
+    max-width: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,17 +61,18 @@
     border-radius: 18px;
 }
 .box-title {
+    max-height: 600px;
     flex: 2;
     margin-left: 25px;
     color: #fff;
 }
 .box-title h2 {
-    max-width: 40%;
+    max-width: 100%;
     font-size: 20px;
     margin-top: 40%;
 }
 .box-title h1 {
-    max-width: 70%;
+    max-width: 100%;
     font-size: 33px;
 }
 
@@ -135,26 +137,33 @@
     margin-right: 15px;
 }
 
-/* estilizando conteiner projeots */
+/* estilizando conteiner projects */
 .conteiner-two {    
     display: none;
 }
 
 .project {
-    margin-top: 15px;
-    height: 480px;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
 .video {
+    max-width: 600px;
+    overflow-y: hidden;
     align-items: center;
-    margin-top: 15px;
+    padding: 8px;
+}
+
+.video video {
+    width: 100%;
 }
 
 .description {
+    max-width: 610px;
     text-align: center;
+    overflow-y: hidden;
+    padding: 8px;
 }
 
 .description a {
@@ -176,8 +185,7 @@
 }
 
 .certificate {
-    margin-top: 15px;
-    height: 525px;
+    margin-top: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -186,4 +194,31 @@
 .certificate img {
     max-height: 500px;
     box-shadow: 1px 1px 8px #000;
+    margin: 8px;
+}
+
+@media ( max-width: 650px ) {
+    .box-two {
+        overflow-y: hidden;
+        display: block;
+    }
+    .box-img img {
+        max-width: 100%;
+        border-radius: 18px;
+    }
+    .box-title {
+        max-height: 150px;
+        overflow-y: hidden;
+        margin-left: 0px;
+        color: #fff;
+    }
+    .box-title h2 {
+        max-width: 100%;
+        font-size: 18px;
+        margin-top: 2%;
+    }
+    .box-title h1 {
+        max-width: 100%;
+        font-size: 28px;
+    }
 }
