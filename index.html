@@ -5,143 +5,298 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Thawan Marques</title>
 <link rel="stylesheet" href="assets/css/style.css">
-<link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@200;300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <!-- Cabeçalho do portifólio -->
 <header>
-    <div class="box-header">
-        <div class="box-one">
-            <a href="https://github.com/Thawxn"><img src="assets/img/github.png"/></a>
-            <a href="https://www.instagram.com/thawxn/"><img src="assets/img/instagram.png"/></a>
-            <a href="https://www.linkedin.com/in/thawan-marques-21948624a/"><img src="assets/img/linkedin.png"/></a>
-        </div>
-        <div class="box-two">
-            <div class="box-img">
-                <img src="assets/img/Thawan.jpg" alt="foto de Thawan"/>
-            </div>
-            <div class="box-title">
-                <h2>Thawan Marques</h2>
-                <h1>Desenvolvedor Back-end</h1>
-            </div>
-        </div>
+    <div class="nav">
+        <ul class="nav-principal">
+            <li class="active" id="thawxn">Thawxn</li>
+        </ul>
+        <ul class="nav-paginas">
+            <li  class="nav-menu" id="about">Sobre</li>
+            <li class="nav-menu" id="projects">Projetos</li>
+            <li class="nav-menu" id="contact">Contatos</li>
+        </ul>
+
+        <span id="burguer" class="material-symbols-outlined">menu</span>
     </div>
+
+    
 </header>
 
 <!-- Conteúdo principal do portifólio -->
 <section>
-    <div class="conteiner">
-        <div class="nav-bar">
-            <ul>
-                <li class="active" id="about">Sobre</li>
-                <li id="projects">Projetos</li>
-                <li id="certificate">Certificados</li>
-            </ul>
-        </div>
 
-        <p class="icons">
-            <img src="assets/img/js.png" alt="javascript">
-            <img src="assets/img/icons8-node-js-32.png" alt="nodejs">
-            <img src="assets/img/mysql.png" alt="mysql">
-            <img src="assets/img/mongodb.png" alt="mongodb">
-            <img src="assets/img/postgre.png" alt="postgre">
-            <img src="assets/img/docker.png" alt="docker">
-        </p>
-        <br>
+    <div class="conteiner-zero">
+        <div class="conteiner">
 
-        <!-- Sobre -->
-        <div class="conteiner-one">
-            <div class="about-text">
-                <h1>Olá Sou Thawan e sou Desenvolvedor Backend</h1>
-                <p>              
-                    <br/> <br/>
-                    tenho 22 anos e busco uma oportunidade de entrar no mercado da programação, sempre me interessei por programação e então sempre tento correr atras de aprender cada vez mais.
-                    <br/> <br/>
-                    sou desenvolvedor back-end, comecei com a linguagem JavaScript focado mais em Node.JS, em banco de dados me aprofundei estudar em linguagem SQL e NoSQL, como MongoDB, MySQL e PostegreSQL, a pratica leva ao conhecimento, então sempre estou fazendo projetos pessoais com essas linguagem, isso me permitiu elevar meu conhecimento na linguagem JavaScript.
-                    <br/> <br/>
-                    iniciei meus estudos com JavaScript por ser a linguagem mais popular e ter uma comunidade gigantesca por trás, e como opinião pessoal é uma linguagem fácil de aprender, e que da oportunidade de você construir um software de qualidade do começo ao fim, codando todo em javascript.
-                    <br/> <br/>
-                    conhecimento nunca é demais, então continuo estudando com curso tecnico para me aprofundar ainda mais na área, iniciei na linguagem C++ e pretendo focar cada vez mais em programação.
-                    <br/> <br/>
-                    Meu interesse é ter a minha primeira oportunidade na área da programação, e assim poder evoluir, crescer na área, e mostrar o quão posso ser útil na sua empresa.
-                    <br/> <br/>
-                    <strong>Vamos trabalhar juntos?</strong>
-                </p>
-                <br>
-                <p class="contact">
-                    <img src="assets/img/gmail.png"/> thawan28032001@gmail.com
-                </p>
-            </div>
-        </div>
-
-        <!-- Projetos -->
-        <div class="conteiner-two">
-            <div class="project project-one">
-                <div class="video">
-                    <video src="assets/video/stockDev.mp4"
-                    controls
-                    width="500"
-                    muted
-                    >
-                    </video>
-                </div>
-                <div class="description">
-                    Projeto StockDev foi criado em busca de solucionar um problema de estoque que tinha 5 localidades projeto foi planejado para futuramente receber atualizações e funcionalidade mais robustas
-                    para uma melhor gestão no estoque no projeto você é capaz de lançar produtos tipos de produtos, localização
-                    e armazernar no estoque é capaz também de visualizar editar, exluir, fazer saida de produtos e entrada de produtos. <a href="https://github.com/Thawxn/StockDev">visualizar projeto no GitHub</a>
-                </div>
+            <div class="entrada-cartao">
+                <img src="./assets/img/desenvolvedor.png">
+                <h1>
+                    Thawan Marques Queiroz
+                </h1>
                 
+                <br>
+                <!-- <hr> -->
+                <br>
+
+                <h4>
+                    Dev Freelancer e Dev Back-end
+                </h4>
             </div>
-            <div class="project project-two">
-                <div class="video">
-                    <video src="assets/video/WebDoctor.mp4"
-                    controls
-                    muted
-                    >
-                    </video>
-                </div>
-                <div class="description">
-                    Projeto WebDoctor, projeto simples de agendamento usando a biblioteca
-                    Full Calendar, para esse projeto usei o banco de dados mongoDB
-                    projeto todo em Node.js, a parte visual foi usado a template enginer ejs
-                    e um pouco de Bootstrap, no projeto também foi usado o mailtrap para teste
-                    de envio de email, o email seria enviado para o cliente automaticamente quando
-                    faltasse 1 hr para a consulta. <a href="https://github.com/Thawxn/LoginCadastro">visualizar projeto no GitHub</a>
-                </div>
+
+        </div>
+    </div>
+
+    <!-- sobre -->
+    <div class="conteiner-one">
+        <div class="conteiner sobre">
+
+            <div class="sobre-1">
+                <h1>
+                    Sobre mim.
+                </h1>
             </div>
-            <div class="project project-one">
-                <div class="video">
-                    <video src="assets/video/loginCadastro.mp4"
-                    controls
-                    width="500"
-                    muted
-                    >
-                    </video>
-                </div>
-                <div class="description">
-                    Projeto LoginCadastro foi criado pensando nos futuros projetos
-                    que iriam precisar de uma área de login e cadastro
-                    foi usado criptografia para se ter mais segurança na senha dos usuários
-                    e se caso precisar de um que necessite implementar uma área de login, já teria a base.
-                    o projeto foi criado com o bando de dados MongoDB, usando bcrypt como criptografia
-                    <a href="https://github.com/Thawxn/WebDoctor">visualizar projeto no GitHub</a>
-                </div>
+
+            <hr>
+            
+            <div class="sobre-2">
+                <p>
+                    Desenvolvedor freelancer de backend dedicado a impulsionar a presença digital do seu negócio. Entre em contato comigo para discutir suas necessidades e especificidades de mercado. Ofereço soluções abrangentes, incluindo sistemas web e software, API's sólidas, metodologias eficientes e painéis de controle intuitivos. Gerencie seus recursos e projetos com precisão através de indicadores personalizados, potencializando o desempenho da sua empresa e proporcionando uma experiência encantadora aos seus clientes durante o atendimento.
+                </p>
             </div>
+
         </div>
 
-        <!-- certificados -->
-        <div class="conteiner-three">
-            <div class="certificates">
-                <div class="certificate">
-                    <img src="assets/img/FormacaoNodeJS.jpg" alt="FormacaoNodeJS">
+        <div class="skills">
+            <div class="skill">
+                <h1>Hard Skill</h1>
+                <br>
+                <p>JavaScript</p>
+                <p>Node.JS</p>
+                <p>MongoDB</p>
+                <p>MySQL</p>
+                <p>Express</p>
+                <p>Docker</p>
+                <p>Versionamento GIT</p>
+            </div>
+            <div class="skill">
+                <h1>Soft Skill</h1>
+                <br>
+                <p>Criatividade</p>
+                <p>Comprometimento a prazos</p>
+                <p>Trabalho em equipe</p>
+                <p>Colaboação</p>
+                <p>Liderança</p>
+                <p>Atenção para ouvir</p>
+                <p>Princípios Éticos</p>
+            </div>
+        </div>
+        <div class="skills-2">
+            <div class="skill-2">
+                <h1>Estou disponivel para novos</h1>
+                <h1>projetos. Entre em contato e</h1>
+                <h1>marcamos uma conversa</h1>
+            </div>
+            <div class="skill-2">
+                <h1>thawan28032001@gmail.com</h1>
+                <h1>+55 33 988942425</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- projetos -->
+    <div class="conteiner-two">
+        <div class="conteiner projetos">
+
+            <div class="projetos-1">
+                <h1>
+                    Projetos.
+                </h1>
+            </div>
+            
+            <hr>
+    
+        </div>
+        
+        <div class="projetos-3">
+            <div class="p-all">
+                <div class="p-vd">
+                    <video controls src="./assets/video/StockDev.mp4" height="100"></video>
                 </div>
-                <div class="certificate">
-                    <img src="assets/img/APIs.jpg" alt="APIs">
+                <div class="p-desc">
+                    <h1>StockDev</h1>
+                    <p>
+                        O StockDev é um projeto criado para solucionar desafios logísticos em estoques distribuídos em cinco localidades. Planejado com a perspectiva de atualizações futuras e funcionalidades robustas, visa aprimorar a gestão de estoques de forma eficiente.
+
+                        A plataforma permite o cadastro de produtos, tipos de produtos e localizações, facilitando o armazenamento e controle dos itens. Além disso, oferece recursos abrangentes, como visualização, edição, exclusão, saída e entrada de produtos. Em resumo, o StockDev não só resolve questões de estoque, mas também proporciona flexibilidade e amplitude para uma gestão dinâmica e eficaz do inventário.
+                    </p>
+                    <div class="icons">
+                        <img src="assets/img/js.png">
+                        <img src="assets/img/icons8-node-js-32.png">
+                        <img src="assets/img/mysql.png">
+                        <img src="assets/img/bootstrap.png">
+                    </div>
                 </div>
-                <div class="certificate">
-                    <img src="assets/img/LogísticaOperacional.jpg" alt="LogísticaOperacional">
+            </div>
+
+            <hr>
+            
+            <div class="p-all">
+                <div class="p-vd">
+                    <video controls src="./assets/video/WebDoctor.mp4" height="100"></video>
                 </div>
+                <div class="p-desc">
+                    <h1>WebDoctor</h1>
+                    <p>
+                        Este projeto foi concebido para atender às necessidades de empresas e lojas que demandam sistemas de agendamento. Utilizando a versatilidade da biblioteca FullCalendar, o projeto foi especificamente desenvolvido para um hospital. A plataforma permite o agendamento de consultas, facilita consultas simples por CPF ou email, e automatiza o envio de emails aos clientes, notificando-os uma hora antes da consulta agendada. Essa solução, embora tenha sido projetada para um contexto hospitalar, poderia ser adaptada para diversos nichos de mercado que requerem sistemas eficientes de agendamento.
+                    </p>
+                    <div class="icons">
+                        <img src="assets/img/js.png">
+                        <img src="assets/img/icons8-node-js-32.png">
+                        <img src="assets/img/mysql.png">
+                        <img src="assets/img/bootstrap.png">
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- <div class="p-all">
+                <div class="p-vd">
+                    video
+                </div>
+                <div class="p-desc">
+                    descrição do projeto
+                </div>
+            </div> -->
+        </div>
+
+        <div class="skills">
+            <div class="skill">
+                <h1>Hard Skill</h1>
+                <br>
+                <p>JavaScript</p>
+                <p>Node.JS</p>
+                <p>MongoDB</p>
+                <p>MySQL</p>
+                <p>Express</p>
+                <p>Docker</p>
+                <p>Versionamento GIT</p>
+            </div>
+            <div class="skill">
+                <h1>Soft Skill</h1>
+                <br>
+                <p>Criatividade</p>
+                <p>Comprometimento a prazos</p>
+                <p>Trabalho em equipe</p>
+                <p>Colaboação</p>
+                <p>Liderança</p>
+                <p>Atenção para ouvir</p>
+                <p>Princípios Éticos</p>
+            </div>
+        </div>
+        <div class="skills-2">
+            <div class="skill-2">
+                <h1>Estou disponivel para novos</h1>
+                <h1>projetos. Entre em contato e</h1>
+                <h1>marcamos uma conversa</h1>
+            </div>
+            <div class="skill-2">
+                <h1>thawan28032001@gmail.com</h1>
+                <h1>+55 33 988942425</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- contato -->
+    <div class="conteiner-three">
+        <div class="conteiner contatos">
+
+            <div class="contatos-1">
+                <h1>
+                    Contatos.
+                </h1>
+            </div>
+                
+        </div>
+
+        <hr>
+        
+        <div class="cartao-2">
+            <div class="contato-cartao">
+    
+                <div class="contato-cartao-1">
+                    <a href="https://github.com/Thawxn">
+                        <img src="./assets/img/github.png">
+                    </a>
+    
+                    <a href="https://www.linkedin.com/in/thawan-marques-21948624a/">
+                        <img src="./assets/img/linkedin.png">
+                    </a>
+    
+                    <a href="https://www.instagram.com/thawxn/">
+                        <img src="./assets/img/instagram.png">
+                    </a>
+                </div>
+    
+                <div class="contato-cartao-2">
+                    <p>
+                        <a href="mailto:thawan28032001@gmail.com">
+                            <img src="./assets/img/gmail.png">
+                            thawan28032001@gmail.com
+                        </a>
+                    </p>
+    
+                    <p>
+                        <a href="https://w.app/yqQTDi">
+                            <img src="./assets/img/whatsapp.png">
+                            Clique para entrar em contato
+                        </a>
+                    </p>
+    
+                </div>
+    
+            </div>
+        </div>
+        
+        <div class="skills">
+            <div class="skill">
+                <h1>Hard Skill</h1>
+                <br>
+                <p>JavaScript</p>
+                <p>Node.JS</p>
+                <p>MongoDB</p>
+                <p>MySQL</p>
+                <p>Express</p>
+                <p>Docker</p>
+                <p>Versionamento GIT</p>
+            </div>
+            <div class="skill">
+                <h1>Soft Skill</h1>
+                <br>
+                <p>Criatividade</p>
+                <p>Comprometimento a prazos</p>
+                <p>Trabalho em equipe</p>
+                <p>Colaboação</p>
+                <p>Liderança</p>
+                <p>Atenção para ouvir</p>
+                <p>Princípios Éticos</p>
+            </div>
+        </div>
+        <div class="skills-2">
+            <div class="skill-2">
+                <h1>Estou disponivel para novos</h1>
+                <h1>projetos. Entre em contato e</h1>
+                <h1>marcamos uma conversa</h1>
+            </div>
+            <div class="skill-2">
+                <h1>thawan28032001@gmail.com</h1>
+                <h1>+55 33 988942425</h1>
             </div>
         </div>
     </div>

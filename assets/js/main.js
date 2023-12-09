@@ -6,10 +6,11 @@ function menuSection() {
         start() {
             this.navBar()
             this.nav()
+            this.skils()
         },
 
         nav() {
-            bar = document.querySelector('.nav-bar').querySelectorAll('li')
+            bar = document.querySelector('.nav').querySelectorAll('li')
 
             bar.forEach(e => {
                 e.addEventListener('click', function() {
@@ -24,6 +25,10 @@ function menuSection() {
             document.addEventListener('click', e => {
                 const nav = e.target
                 
+                if(nav.id === 'thawxn') {
+                    this.thawxn()
+                }
+
                 if(nav.id === 'about') {
                     this.about()
                 }
@@ -32,47 +37,81 @@ function menuSection() {
                     this.projects()
                 }
 
-                if(nav.id === 'certificate') {
-                    this.certificate()
+                if(nav.id === 'contact') {
+                    this.contact()
+                }
+
+                if(nav.id === 'burguer') {
+                    this.burguer()
                 }
             })
+        },
+
+        thawxn() {
+            const thawxn = document.querySelector('.conteiner-zero')
+
+            const about = document.querySelector('.conteiner-one')
+            const projects = document.querySelector('.conteiner-two')
+            const contact = document.querySelector('.conteiner-three')
+            
+            thawxn.style.display = 'block'
+            about.style.display = 'none'
+            projects.style.display = 'none'
+            contact.style.display = 'none'
+
         },
 
         about() {
             const about = document.querySelector('.conteiner-one')
 
+            const thawxn = document.querySelector('.conteiner-zero')
             const projects = document.querySelector('.conteiner-two')
-            const certificate = document.querySelector('.conteiner-three')
+            const contact = document.querySelector('.conteiner-three')
             
             about.style.display = 'block'
+            thawxn.style.display = 'none'
             projects.style.display = 'none'
-            certificate.style.display = 'none'
+            contact.style.display = 'none'
 
         },
 
         projects() {
             const projects = document.querySelector('.conteiner-two')
 
+            const thawxn = document.querySelector('.conteiner-zero')
             const about = document.querySelector('.conteiner-one')
-            const certificate = document.querySelector('.conteiner-three')
+            const contact = document.querySelector('.conteiner-three')
             
             projects.style.display = 'block'
+            thawxn.style.display = 'none'
             about.style.display = 'none'
-            certificate.style.display = 'none'
+            contact.style.display = 'none'
         },
         
-        certificate() {
-            const certificate = document.querySelector('.conteiner-three')
+        contact() {
+            const contact = document.querySelector('.conteiner-three')
             
+            const thawxn = document.querySelector('.conteiner-zero')
             const about = document.querySelector('.conteiner-one')
             const projects = document.querySelector('.conteiner-two')
             
-            certificate.style.display = 'block'
+            contact.style.display = 'block'
+            thawxn.style.display = 'none'
             about.style.display = 'none'
             projects.style.display = 'none'
         },
 
-        
+        burguer() {
+            const navPaginas = document.querySelector('.nav-paginas');
+            
+
+            if(navPaginas.style.display === 'block') {
+                navPaginas.style.display = 'none'
+            } else {
+                navPaginas.style.display = 'block'
+            }
+        },
+
     }
 }
 
