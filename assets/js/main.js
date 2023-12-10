@@ -6,7 +6,6 @@ function menuSection() {
         start() {
             this.navBar()
             this.nav()
-            this.skils()
         },
 
         nav() {
