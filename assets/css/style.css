@@ -74,7 +74,7 @@ span#burguer {
 /*  */
 /* conteiner-zero */
 .conteiner-zero {
-    display: none;
+    display: block;
     height: 100vh;
     margin: 0px 20px;
 }
@@ -164,7 +164,7 @@ span#burguer {
 /*  */
 /* projetos */
 .conteiner-two {
-    display: block;
+    display: none;
 }
 
 .projetos {
