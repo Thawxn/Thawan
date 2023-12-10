@@ -63,6 +63,7 @@ function menuSection() {
 
         about() {
             const about = document.querySelector('.conteiner-one')
+            const navPaginas = document.querySelector('.nav-paginas');
 
             const thawxn = document.querySelector('.conteiner-zero')
             const projects = document.querySelector('.conteiner-two')
@@ -73,10 +74,14 @@ function menuSection() {
             projects.style.display = 'none'
             contact.style.display = 'none'
 
+            if(navPaginas.style.display === 'block') {
+                navPaginas.style.display = 'none'
+            }
         },
 
         projects() {
             const projects = document.querySelector('.conteiner-two')
+            const navPaginas = document.querySelector('.nav-paginas');
 
             const thawxn = document.querySelector('.conteiner-zero')
             const about = document.querySelector('.conteiner-one')
@@ -86,10 +91,15 @@ function menuSection() {
             thawxn.style.display = 'none'
             about.style.display = 'none'
             contact.style.display = 'none'
+
+            if(navPaginas.style.display === 'block') {
+                navPaginas.style.display = 'none'
+            }
         },
         
         contact() {
             const contact = document.querySelector('.conteiner-three')
+            const navPaginas = document.querySelector('.nav-paginas');
             
             const thawxn = document.querySelector('.conteiner-zero')
             const about = document.querySelector('.conteiner-one')
@@ -99,6 +109,10 @@ function menuSection() {
             thawxn.style.display = 'none'
             about.style.display = 'none'
             projects.style.display = 'none'
+
+            if(navPaginas.style.display === 'block') {
+                navPaginas.style.display = 'none'
+            }
         },
 
         burguer() {

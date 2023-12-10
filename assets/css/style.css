@@ -74,7 +74,7 @@ span#burguer {
 /*  */
 /* conteiner-zero */
 .conteiner-zero {
-    display: block;
+    display: none;
     height: 100vh;
     margin: 0px 20px;
 }
@@ -164,7 +164,7 @@ span#burguer {
 /*  */
 /* projetos */
 .conteiner-two {
-    display: none;
+    display: block;
 }
 
 .projetos {
@@ -235,10 +235,25 @@ span#burguer {
     height: 20%;
     width: 90%;
     padding-left: 2%;
+    display: flex;
+    align-items: center;
 }
 
 .p-desc .icons img {
     margin-right: 5px;
+    width: 32px;
+    height: 32px;
+    margin-right: 15px;
+}
+
+.p-desc .icons a {
+    margin: 0;
+    width: 50px;
+}
+
+.p-desc .icons a img {
+    width: 32px;
+    height: 32px;
 }
 
 /*  */
@@ -334,6 +349,7 @@ span#burguer {
 
 .skill {
     padding: 2%;
+    overflow: hidden;
 }
 
 .skill h1 {
@@ -585,7 +601,11 @@ span#burguer {
     }
 
     .projetos-3 {
-        height: 200vh;
+        height: 205vh;
+    }
+
+    .p-desc {
+        height: 69vh;
     }
 
     .p-desc p {
@@ -593,7 +613,7 @@ span#burguer {
     }
 
     .p-all {
-        height: 100vh;
+        height: 103vh;
     }
 
     .p-vd {
