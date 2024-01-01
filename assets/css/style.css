@@ -124,7 +124,7 @@ span#burguer {
 .sobre-1 {
     width: 80vw;
     height: 40vh;
-    padding-top: 150px;
+    padding-top: 130px;
     padding-left: 2%;
 }
 
@@ -168,7 +168,7 @@ span#burguer {
 
 .projetos {
     flex-direction: column;
-    height: 40vh;
+    height: 34vh;
 }
 
 .projetos hr {
@@ -261,7 +261,7 @@ span#burguer {
 
 .contatos {
     flex-direction: column;
-    height: 40vh;
+    height: 34vh;
 }
 
 .contatos-1 {
@@ -376,7 +376,7 @@ span#burguer {
 }
 
 .skill-2 h1 {
-    font-size: 15px;
+    font-size: 10px;
     font-weight: 400;
     color: #b1b0b0;
 }
