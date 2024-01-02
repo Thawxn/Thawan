@@ -168,7 +168,7 @@ span#burguer {
 
 .projetos {
     flex-direction: column;
-    height: 34vh;
+    height: 40vh;
 }
 
 .projetos hr {
@@ -261,7 +261,7 @@ span#burguer {
 
 .contatos {
     flex-direction: column;
-    height: 34vh;
+    height: 40vh;
 }
 
 .contatos-1 {
@@ -527,6 +527,10 @@ span#burguer {
         margin: 0;
     }
 
+    .projetos {
+        height: 34vh;
+    }
+
     .projetos h1 {
         font-size: 40px;
     }    
@@ -545,6 +549,10 @@ span#burguer {
     /*  */
     .conteiner-three {
         margin: 0;
+    }
+
+    .contatos {
+        height: 34vh;
     }
 
     .contatos h1 {
