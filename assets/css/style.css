@@ -169,6 +169,7 @@ span#burguer {
 .projetos {
     flex-direction: column;
     height: 40vh;
+    overflow: hidden;
 }
 
 .projetos hr {
@@ -262,6 +263,7 @@ span#burguer {
 .contatos {
     flex-direction: column;
     height: 40vh;
+    overflow: hidden;
 }
 
 .contatos-1 {
